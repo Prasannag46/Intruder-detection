@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Spotify Player</title>
+</head>
+<style>
+    body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    background-image: url(blur2.jpg) ;
+    background-size: cover;
+    box-shadow: black;
+    
+    
+}
+
+
+.player-container {
+    background-color: #fccfe6;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+    
+
+.song-image {
+    width: 100%;
+    height: auto;
+}
+
+.song-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.song-info h2 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.song-info p {
+    margin: 0;
+    color: #888;
+}
+.player-controls {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.control-button {
+    padding: 10px;
+    background-color:#f53192;
+    color:#fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+
+.control-button:hover {
+    background-color:#f53192;
+}
+#prograss{
+-webkit-appearance: none;
+width:100%;
+height:6px;
+background:#f53192;
+border-radius: 4px;
+cursor: pointer;
+margin:40px 0;
+}
+#prograss::-webkit-slider-thumb{
+ -webkit-appearance: none;
+ background:#f53192;
+ width:30px;
+ height:30px;
+ border-radius: 50px;
+ border:8px solid #fff;
+ box-shadow: 0 5px 5px rgba(255,26,26,0.22);
+}
+    
+
+</style>
+<body>
+    <div class="player-container">
+        <img src="imgg.jpg" alt="Song Image" class="song-image">
+        
+        <div class="song-info">
+            <h2 style="font-family:sans-serif;">Urike Urike</h2>
+            <p>Sid Sriram</p>
+            <input type="range" value="0" id="prograss">
+        </div>
+        <div class="player-controls">
+            <button class="control-button">Previous</button>
+            <button class="control-button">Play</button>
+            <button class="control-button">Next</button>
+        </div>
+
+
+    </div>
+    
+</body>
+</html>
